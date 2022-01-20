@@ -1,0 +1,1 @@
+cat /all/cat/pics
