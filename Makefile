@@ -1,7 +1,7 @@
 # This is the only part you edit. Add the path to the Makefile to call
 # The order does matter! If test/ needs /src/class_dsa it will fail
 DIRS+=src/socket_factory src/c_subprocess src/file_fetcher src/http_handler src/web_server
-DIRS+=test/
+# DIRS+=test/
 
 BUILD_DIRS=$(DIRS:%=build-%)
 DEBUG_DIRS=$(DIRS:%=debug-%)
