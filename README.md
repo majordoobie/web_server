@@ -17,6 +17,13 @@ An example of how a resource is provided is:
 | GET /../index.html      | - Do a `search` in `$WEB`<br /> - Search should resolve to a path OUTSIDE of the `$WEB` sandbox which is an error | NULL                                                                                                                                     | 404                            |
 | GET /cgi-bin/index.html | - Do a search of `$CGI` if found, parse and return                                                                | - IF exist & executable return result of executable<br /> - IF exists & NOT executable, return `NULL`<br /> - IF no exist, return `NULL` | - 200 <br /> - 403<br /> - 404 |
 
+**Legend** 
+
+| Key      | Meaning                                               |
+|----------|-------------------------------------------------------|
+| `$WEB`   | The web sandbox directory where HTML files are stored |
+| `$CGI`   | CGI directory where things CAN execute and return     |
+| `search` | The action of searching for a resource file           |
 
 Ashti was tested with the `check.h` framework. I have tried to create instructions 
 for the framework but it looks like the latest version of `chech.h` does not support
