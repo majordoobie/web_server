@@ -25,6 +25,25 @@ An example of how a resource is provided is:
 | `$CGI`   | CGI directory where things CAN execute and return     |
 | `search` | The action of searching for a resource file           |
 
+
+## How to run
+
+Running requires a Linux host machine with `make` available. Running make will 
+create the `ashti` binary in the current working directory of the repo
+
+```bash
+./ashti -h
+Invalid argument supplied. The server must receive a mandatory file path to its root folder. 
+Additionally, a -c option may be supplied to modify for how many connections it should listen to before it errors. 
+A value of 0 will listen for ever.
+
+Examples:
+        ./ashti /path/to/www_root
+        ./ashti www_root -c 4
+```
+
+
+## Errors
 Ashti was tested with the `check.h` framework. I have tried to create instructions 
 for the framework but it looks like the latest version of `chech.h` does not support
 the pattern I used to set up the tests. I tried to download different versions but 
@@ -34,6 +53,5 @@ the version of `check.h` was used. I have disabled the tests to avoid compilatio
 errors. 
 
 
-To 
 
 
